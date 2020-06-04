@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "node",
+        "outDir": "./_ts_compile",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "target": "es6",
+        "rootDir": "./src",
+        "lib": [
+            "dom",
+            "es6",
+            "es2017"
+        ],
+        "typeRoots": [
+            "types",
+            "node_modules/@types"
+        ],
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
