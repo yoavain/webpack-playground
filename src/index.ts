@@ -11,13 +11,13 @@ import icon9 from '../resources/icon9.png';
 
 const icons = [icon0, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9];
 
-import * as _ from "lodash";
+import { join } from "lodash/array";
 
 const component = () => {
     const element = document.createElement('div');
 
     // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = join(['Hello', 'webpack'], ' ');
     element.classList.add('hello');
 
     // Add the image to our existing div.
