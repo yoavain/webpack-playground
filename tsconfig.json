@@ -16,6 +16,11 @@
             "types",
             "node_modules/@types"
         ],
+        "baseUrl": "./",
+        "paths": {
+            "~src/*": ["src/*"],
+            "~resources/*": ["resources/*"]
+        },
         "forceConsistentCasingInFileNames": true
     },
     "include": [

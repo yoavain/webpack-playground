@@ -26,6 +26,12 @@ module.exports = {
             },
         ],
     },
+    resolve: {
+        alias: {
+            "~src": path.resolve(__dirname, 'src'),
+            "~resources": path.resolve(__dirname, 'resources')
+        }
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new CopyPlugin({
