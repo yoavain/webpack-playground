@@ -32,6 +32,6 @@ jobs:
         CI: true
 
     - name: Build and Test
-      run: npm run webpack
+      run: npm run build
       env:
         CI: true
