@@ -6,8 +6,9 @@
         "esModuleInterop": true,
         "allowJs": true,
         "target": "es6",
-        "rootDir": "./src",
+        "rootDir": ".",
         "lib": ["dom", "es6", "es2017"],
+        "noEmit": true,
         "typeRoots": ["types", "node_modules/@types"],
         "baseUrl": "./",
         "paths": {
@@ -16,5 +17,5 @@
         },
         "forceConsistentCasingInFileNames": true
     },
-    "include": ["./src/**/*"]
+    "include": ["./src/**/*", "./test/**/*"]
 }
