@@ -1,4 +1,5 @@
 ## This is a template for a webpack project
+![renovate](https://badges.renovateapi.com/github/yoavain/webpack-playground) ![visitors](https://visitor-badge.glitch.me/badge?page_id=yoavain.webpack-playground)
 
 #### It contains a skeleton for:
 1. Webpack
