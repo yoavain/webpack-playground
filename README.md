@@ -9,6 +9,7 @@
 5. husky pre-commit hook
 6. lint-staged (that runs eslint --fix for code and prettier for json files)
 7. Webpack bundle analyzer
+8. Webpack find duplicate dependencies
 
 ---
 
