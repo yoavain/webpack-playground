@@ -14,14 +14,14 @@ const icons = [icon0, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, ic
 import { join } from "lodash/array";
 
 const component = () => {
-    const element = document.createElement("div");
+    const element: HTMLDivElement = document.createElement("div");
 
     // Lodash, now imported by this script
     element.innerHTML = join(["Hello", "webpack"], " ");
     element.classList.add("hello");
 
     // Add the image to our existing div.
-    const myIcon = new Image();
+    const myIcon: HTMLImageElement = new Image();
     myIcon.src = icons[Math.floor(Math.random() * icons.length)];
 
     element.appendChild(myIcon);
