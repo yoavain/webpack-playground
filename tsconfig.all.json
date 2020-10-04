@@ -15,7 +15,8 @@
             "~src/*": ["src/*"],
             "~resources/*": ["resources/*"]
         },
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "importsNotUsedAsValues": "error"
     },
     "include": ["./src/**/*", "./test/**/*"]
 }
