@@ -1,20 +1,23 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "labels": ["renovate", "dependencies"],
-  "packageRules": [
-    {
-      "depTypeList": ["dependencies"],
-      "labels": ["dependencies"],
-      "updateTypes": ["minor", "patch"],
-      "automerge": true
+    "force": {
+        "constraints": {
+            "node": "< 15.0.0"
+        }
     },
-    {
-      "depTypeList": ["devDependencies"],
-      "labels": ["dev-dependencies"],
-      "updateTypes": ["minor", "patch"],
-      "automerge": true
-    }
-  ]
+    "extends": ["config:base"],
+    "labels": ["renovate", "dependencies"],
+    "packageRules": [
+        {
+            "depTypeList": ["dependencies"],
+            "labels": ["dependencies"],
+            "updateTypes": ["minor", "patch"],
+            "automerge": true
+        },
+        {
+            "depTypeList": ["devDependencies"],
+            "labels": ["dev-dependencies"],
+            "updateTypes": ["minor", "patch"],
+            "automerge": true
+        }
+    ]
 }
