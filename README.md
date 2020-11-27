@@ -1,7 +1,7 @@
 ## This is a template for a webpack project
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/yoavain/webpack-playground.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/yoavain/webpack-playground/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/yoavain/webpack-playground.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/yoavain/webpack-playground/context:javascript)
-![renovate](https://badges.renovateapi.com/github/yoavain/webpack-playground)
+[![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=yoavain.webpack-playground)
 
 #### It contains a skeleton for:
