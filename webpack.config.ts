@@ -1,8 +1,9 @@
-const CopyPlugin = require("copy-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const path = require("path");
+import type * as webpack from "webpack";
+import * as path from "path";
+import CopyPlugin from "copy-webpack-plugin";
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
 
-module.exports = {
+export const baseConfig: webpack.Configuration = {
     mode: "development",
     devtool: "source-map",
     entry: "./src/index.ts",
@@ -44,3 +45,5 @@ module.exports = {
         port: 9000
     }
 };
+
+export default baseConfig;
