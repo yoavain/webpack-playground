@@ -29,6 +29,7 @@ export const baseConfig: webpack.Configuration = {
     },
     resolve: {
         alias: {
+            "~root": __dirname,
             "~src": path.resolve(__dirname, "src"),
             "~resources": path.resolve(__dirname, "resources")
         }
