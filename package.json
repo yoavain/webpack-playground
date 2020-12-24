@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "npm run eslint && npm run type-check && npm run test && npm run webpack-find-duplicates",
+        "build": "npm run eslint && npm run type-check && npm run test && npm run webpack",
         "start:dev": "webpack-dev-server",
         "eslint": "eslint src/ test/ webpack.config.*",
         "eslint:fix": "npm run eslint -- --fix",
