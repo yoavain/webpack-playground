@@ -6,7 +6,7 @@
     "scripts": {
         "build": "npm run eslint && npm run type-check && npm run test && npm run webpack-find-duplicates",
         "start:dev": "webpack-dev-server",
-        "eslint": "eslint src/ test/ webpack.config*",
+        "eslint": "eslint src/ test/ webpack.config.*",
         "eslint:fix": "npm run eslint -- --fix",
         "prettier": "prettier --write *.json .eslintrc.json .prettierrc tsconfig.json tsconfig.build.json webpack.config*.js",
         "test": "jest --coverage",
