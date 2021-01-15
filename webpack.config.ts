@@ -1,8 +1,8 @@
-const CopyPlugin = require("copy-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const path = require("path");
+import type * as webpack from "webpack";
+import * as path from "path";
+import CopyPlugin from "copy-webpack-plugin";
 
-module.exports = {
+export const baseConfig: webpack.Configuration = {
     mode: "development",
     devtool: "source-map",
     entry: "./src/index.ts",
@@ -14,7 +14,8 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                use: "ts-loader",
+                loader: "ts-loader",
+                options: { configFile: "tsconfig.build.json" },
                 exclude: /node_modules/
             },
             {
@@ -28,12 +29,12 @@ module.exports = {
     },
     resolve: {
         alias: {
+            "~root": __dirname,
             "~src": path.resolve(__dirname, "src"),
             "~resources": path.resolve(__dirname, "resources")
         }
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [{ from: "html", to: "." }]
         })
@@ -44,3 +45,5 @@ module.exports = {
         port: 9000
     }
 };
+
+export default baseConfig;

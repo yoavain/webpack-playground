@@ -1,14 +1,13 @@
 {
     "compilerOptions": {
-        "module": "esnext",
+        "module": "commonjs",
         "moduleResolution": "node",
         "outDir": "./_ts_compile",
         "esModuleInterop": true,
         "allowJs": true,
         "target": "es6",
-        "rootDir": ".",
+        "rootDir": "./src",
         "lib": ["dom", "es6", "es2017"],
-        "noEmit": true,
         "typeRoots": ["types", "node_modules/@types"],
         "baseUrl": "./",
         "paths": {
@@ -16,7 +15,8 @@
             "~resources/*": ["resources/*"]
         },
         "forceConsistentCasingInFileNames": true,
-        "importsNotUsedAsValues": "error"
+        "importsNotUsedAsValues": "error",
+        "allowSyntheticDefaultImports": true
     },
-    "include": ["./src/**/*", "./test/**/*"]
+    "include": ["./src/**/*"]
 }
