@@ -1,7 +1,6 @@
 import type * as webpack from "webpack";
 import * as path from "path";
 import CopyPlugin from "copy-webpack-plugin";
-import { CleanWebpackPlugin } from "clean-webpack-plugin";
 
 export const baseConfig: webpack.Configuration = {
     mode: "development",
@@ -15,7 +14,8 @@ export const baseConfig: webpack.Configuration = {
         rules: [
             {
                 test: /\.ts$/,
-                use: "ts-loader",
+                loader: "ts-loader",
+                options: { configFile: "tsconfig.build.json" },
                 exclude: /node_modules/
             },
             {
@@ -35,7 +35,6 @@ export const baseConfig: webpack.Configuration = {
         }
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [{ from: "html", to: "." }]
         })
