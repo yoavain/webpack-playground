@@ -1,8 +1,9 @@
 import type * as webpack from "webpack";
+import type * as webpackDevServer from "webpack-dev-server";
 import * as path from "path";
 import CopyPlugin from "copy-webpack-plugin";
 
-export const baseConfig: webpack.Configuration = {
+export const baseConfig: webpack.Configuration & { devServer?: webpackDevServer.Configuration } = {
     mode: "development",
     devtool: "source-map",
     entry: "./src/index.ts",
