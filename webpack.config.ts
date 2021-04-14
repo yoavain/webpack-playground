@@ -1,4 +1,5 @@
 import type * as webpack from "webpack";
+import "webpack-dev-server";
 import * as path from "path";
 import CopyPlugin from "copy-webpack-plugin";
 
@@ -39,6 +40,7 @@ export const baseConfig: webpack.Configuration = {
             patterns: [{ from: "html", to: "." }]
         })
     ],
+    // @ts-ignore
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
