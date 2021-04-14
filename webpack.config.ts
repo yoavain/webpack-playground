@@ -39,6 +39,7 @@ export const baseConfig: webpack.Configuration = {
             patterns: [{ from: "html", to: "." }]
         })
     ],
+    // @ts-ignore
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
