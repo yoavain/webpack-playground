@@ -6,7 +6,7 @@
     "scripts": {
         "postinstall": "git config --get core.hookspath || husky install",
         "build": "npm run eslint && npm run type-check && npm run test && npm run webpack",
-        "start:dev": "webpack-dev-server",
+        "start:dev": "webpack serve --mode=development",
         "eslint": "eslint src/ test/ webpack.config.*",
         "eslint:fix": "npm run eslint -- --fix",
         "prettier": "prettier --write *.json .eslintrc.json .prettierrc tsconfig.json tsconfig.build.json webpack.config*.js",

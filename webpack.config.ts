@@ -1,5 +1,4 @@
 import type * as webpack from "webpack";
-import "webpack-dev-server";
 import * as path from "path";
 import CopyPlugin from "copy-webpack-plugin";
 
