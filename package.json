@@ -26,7 +26,7 @@
         "npm": "^6.0.0"
     },
     "devDependencies": {
-        "@types/jest": "27.0.1",
+        "@types/jest": "27.0.2",
         "@types/lodash": "4.14.173",
         "@types/node": "16.9.2",
         "@types/webpack": "5.28.0",
