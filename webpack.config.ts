@@ -41,7 +41,6 @@ export const baseConfig: webpack.Configuration = {
     ],
     // @ts-ignore
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
         compress: true,
         port: 9000
     }
