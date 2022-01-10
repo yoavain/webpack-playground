@@ -23,7 +23,7 @@
     "license": "ISC",
     "engines": {
         "node": ">=12 <17",
-        "npm": "^6.0.0"
+        "npm": "^8.0.0"
     },
     "devDependencies": {
         "@types/jest": "27.4.0",
