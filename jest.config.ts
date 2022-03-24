@@ -1,4 +1,6 @@
-module.exports = {
+import type { Config } from "@jest/types";
+
+const config: Config.InitialOptions = {
     transform: {
         "^.+\\.ts$": "ts-jest"
     },
@@ -11,3 +13,5 @@ module.exports = {
     },
     verbose: true
 };
+
+export default config;

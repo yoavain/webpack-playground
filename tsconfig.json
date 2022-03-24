@@ -19,5 +19,5 @@
         "importsNotUsedAsValues": "error",
         "allowSyntheticDefaultImports": true
     },
-    "include": ["./src/**/*", "./test/**/*", "./webpack.config.*", "jest.config.js"]
+    "include": ["./src/**/*", "./test/**/*", "./webpack.config.*", "jest.config.ts"]
 }
