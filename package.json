@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "postinstall": "git config --get core.hookspath || husky install",
+        "postinstall": "npm run husky-install && npx fix-lockfile-integrity package-lock.json",
+        "husky-install": "git config --get core.hookspath || husky install",
         "build": "npm run eslint && npm run type-check && npm run test && npm run webpack",
         "start:dev": "webpack serve --mode=development",
         "eslint": "eslint src/ test/ webpack.config.*",
