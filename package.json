@@ -27,7 +27,7 @@
         "npm": "<9"
     },
     "devDependencies": {
-        "@jest/types": "29.2.1",
+        "@jest/types": "29.3.1",
         "@types/jest": "29.2.2",
         "@types/lodash": "4.14.188",
         "@types/node": "18.11.9",
